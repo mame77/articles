@@ -1,0 +1,24 @@
+{
+  "name": "articles",
+  "version": "1.0.0",
+  "scripts": {
+    "zenn:new": "zenn new:article",
+    "zenn:preview": "zenn preview",
+    "qiita:new": "qiita new",
+    "qiita:preview": "qiita preview",
+    "qiita:pull": "qiita pull"
+  },
+  "devEngines": {
+    "packageManager": {
+      "name": "pnpm",
+      "version": "^11.9.0",
+      "onFail": "download"
+    }
+  },
+  "type": "module",
+  "devDependencies": {
+    "@qiita/qiita-cli": "^1.13.0",
+    "zenn-cli": "^0.5.15"
+  },
+  "private": true
+}
